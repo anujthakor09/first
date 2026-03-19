@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickCart - Instant Grocery</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #4ad0e5;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top : 0;
+    left:0;
+    right:0;
+
+
+}
+
+nav a {
+    content:"";
+    margin: 0 15px;
+    color: rgb(220, 210, 206);
+    text-decoration: none ;
+    font-weight: bold;
+    position: relative;
+}
+
+
+nav a::after {
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #f1c40f;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1542838132-92c53300491e');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #6d006a;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero button {
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #e8aae6;
+    transform: scale(1.1);
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h2>QuickCart</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Offers</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Groceries in Minutes!</h1>
+    <p>Fresh fruits, vegetables & daily essentials delivered instantly</p>
+    <button>Shop Now</button>
+</section>
+
+<section class="categories">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c">
+        <h3>Fruits</h3>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc">
+        <h3>Vegetables</h3>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505">
+        <h3>Dairy</h3>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1604908177522-040d4b20f7aa">
+        <h3>Snacks</h3>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 QuickCart | Designed for College Assignment</p>
+</footer>
+
+</body>
+</html>
